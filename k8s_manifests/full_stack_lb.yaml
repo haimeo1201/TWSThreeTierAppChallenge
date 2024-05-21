@@ -6,12 +6,12 @@ metadata:
   namespace: workshop
   annotations:
     alb.ingress.kubernetes.io/scheme: internet-facing
-    alb.ingress.kubernetes.io/target-type: ip
+    alb.ingress.kubernetes.io/target-type: instance
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'
 spec:
   ingressClassName: alb
   rules:
-    - host: k8s-workshop-mainlb-7f430e3450-822386880.us-east-1.elb.amazonaws.com
+    - host: cicddemo.socii-demo.com
       http:
         paths:
           - path: /api

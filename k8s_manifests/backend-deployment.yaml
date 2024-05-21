@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: api
-        image: public.ecr.aws/u1o8l9k6/three-tier-backend:latest
+        image: haimeo1201/becicd:v1.1
         imagePullPolicy: Always
         env:
           - name: MONGO_CONN_STR
